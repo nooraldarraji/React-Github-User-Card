@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Card from './Card'
 
+
+
 class App extends React.Component {
   constructor() {
     super()
@@ -34,7 +36,7 @@ class App extends React.Component {
     // this.fetchFollowers()
     return (
       <>
-        <h1>Github</h1>
+        <h1>My Github followers</h1>
         {this.state.users.forEach(user =>
           <Card props={user.login} />
 
